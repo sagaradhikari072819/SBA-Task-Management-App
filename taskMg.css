@@ -1,0 +1,39 @@
+body{
+    background-color: aqua;
+    border-radius: 10%;
+    justify-content: center;
+    justify-items: center;
+    align-items: center;
+
+}
+
+#table{
+    /* display: flex;
+    align-items: center;
+    text-align: center; */
+
+    width: 100%;
+    text-align: center;
+    padding: 10px;
+    font-size:x-large;
+    border: black;
+    border-radius: 10px;
+    justify-content:space-between;
+    background-color:rgb(106, 125, 247);
+}
+#sec{
+    display: flex;
+    justify-content:center;
+}
+#butten{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: larger;
+    margin-top: 5px;
+    margin-bottom: 5px;
+    background-color: aquamarine;
+    padding: 2px;
+    
+
+}

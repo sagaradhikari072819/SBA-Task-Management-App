@@ -3,41 +3,60 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-     <script src="./taskMgApp.js" defer></script>
-    <title>Task Management App</title>
+    <script src="taskMgApp.js" defer></script>
+    <link rel="stylesheet" href="taskMg.css">
+
+
+    <title>DOM excercise 2 Office Hour.</title>
 </head>
 <body>
     <h1>Task Management App</h1>
-     <div>
-        <!-- Task Name  -->
-        <input type="text" id="" placeholder="task name...">
+<!--first section is for user form -->
+    <section id  ="tsakFormSection">
+        <label for="taskName">Task Name:</label>
+        <input id="taskName" placeholder="eg finish SBA" type="text">
+        <br>
 
-        <!-- Categories  -->
-        <select>
-            <option disabled selected>Categories</option>
-            <option value="school">School</option>
-            <option value="work">Work</option>
-            <option value="personal">Personal</option>
-        </select>
+         <label for="taskCategory">Task Category:</label>
+        <input id="taskCategoty" placeholder="eg work, personal, business.." type="text">
+        <br>
+         <label for="taskDeadline">Task Deadline:</label>
+        <input id="taskDeadline" type="date">
+<br>
+        <label for="taskStatus">Task Status:</label>
+        <!-- <input id="taskStatus" placeholder="incomplet, progress, completed.." type="text"> -->
+         <select id="taskStatus">
+         <option value="Not Started">Not Started</option>
+         <option value="In Progress">In Progress</option>
+         <option value="Completed">Completed</option>
+         </select>
+        
+    </section>
 
-        <!-- Deadline  -->
-         <input type="date" name="" id="">
-
-         <!-- Status  -->
-          <select>
-            <option disabled selected>Status</option>
-            <option value="pending">Pending</option>
-            <option value="inprogress">In Progress</option>
-            <option value="completed">Completed</option>
-          </select>
-
-          <!-- Add Task Button  -->
-          <button>Add Task</button>
-    </div>
-   
+    <button id="butten" >Add Task</button>
 
 
+<!-- this section will display the task -->
+    <section id="sec" >
+        <!-- <ul id="taskBodyUl" ></ul> -->
 
+        <table >
+            <thead > 
+                <tr id ="table">
+                    <th>Task Name</th>
+                    <th>Category</th>
+                    <th>Deadline</th>
+                    <th>Status</th>
+                </tr>
+            </thead>
+
+            <tbody id="taskTbody" >
+            <!-- java script will be inserted here -->
+            </tbody>
+
+        </table>
+
+    </section>
 
 </body>
 </html>
